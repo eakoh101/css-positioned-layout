@@ -3,3 +3,47 @@ body {
 }
 
 /* Start coding here */
+.container{
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  
+}
+.img{
+  border-radius: 2mm;
+  width: 100%;
+  height: auto;
+  display: block; /* Removes bottom whitespace/gap */
+}
+
+.advertise-box{
+ position: relative;
+ padding: 4px;
+ background-color: aliceblue;
+ max-width: 625px; 
+ width: 100%;
+}
+
+.text-1{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: beige;
+  font-size: clamp(14px, 4vw, 20px);
+}
+
+.text-2{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: beige;
+  padding: 5px;
+  background-color: cadetblue;
+  font-size: clamp(14px, 4vw, 20px);
+  
+}

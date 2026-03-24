@@ -1,1 +1,117 @@
 /* Start coding here */
+.container{
+  height: 100vh;
+  background-color: white
+
+}
+
+.header-box{
+    background-color: dimgray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.font-header{
+    font-size: x-large;
+    padding: 6px;
+}
+
+.font-sub{
+    padding: 4px;
+    font-size: medium;
+}
+
+.box1{
+    background-color: darkgray;
+    width: 130px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+    border-radius: 2mm;
+
+}
+
+.box2{
+    background-color: darkgray;
+    width: 130px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 260px;
+    border-radius: 2mm;
+}
+ 
+
+.box3 {
+    background-color: greenyellow;
+    width: 130px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    border-radius: 2mm;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+}
+
+.box4{
+    background-color: whitesmoke;
+    width: 130px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    border-radius: 2mm;
+    position: absolute;
+    right: 10px;
+    top: 140px;
+    z-index: 1;
+}
+
+.box5{
+    background-color: greenyellow;
+    width: 130px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    border-radius: 2mm;
+    position: absolute;
+    right: 10px;
+    top: 180px;
+}
+
+.box3 .font-sub{
+    font-size:x-small;
+}
+
+.box4 .font-sub{
+    font-size: x-small;
+}
+
+
+.cross-mark {
+    background-color: greenyellow;
+    width: 9px;          /* ขยายกล่องให้ใหญ่ขึ้นนิดนึงเพื่อให้มีพื้นที่จัดกลาง */
+    height: 9px;
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+    
+    position: absolute;
+    right: 2px;           /* ปรับตำแหน่งให้อยู่ใน box4 */
+    top: 25%;             /* ดันลงมาครึ่งหนึ่งของ box4 */
+    transform: translateY(-50%); /* ดึงกลับขึ้นไปครึ่งตัวเพื่อให้กลางเป๊ะพอดี */
+    
+    z-index: 2;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    font-size: 8px;      /* ลดขนาดฟอนต์ลงมาให้เล็กลงกว่ากล่อง */
+    line-height: 1;       /* ตั้งค่าเป็น 1 เพื่อให้ตัวอักษรไม่โดนดันบรรทัด */
+    padding-bottom: 2px;  /* ทริคพิเศษ: ตัว ⨯ ของบางฟอนต์จะลอยสูงไปนิด ให้หยอด padding ล่างช่วย */
+    cursor: pointer;
+    
+}
